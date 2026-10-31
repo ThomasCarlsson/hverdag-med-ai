@@ -5,5 +5,6 @@
   "tid_weekend": "10:00",
   "max_forsinkelse_timer": 12,
   "pages_base_url": "https://thomascarlsson.github.io/hverdag-med-ai",
-  "api_version": "v25.0"
+  "api_version": "v25.0",
+  "api_host": "https://graph.facebook.com"
 }

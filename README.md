@@ -39,5 +39,5 @@ Du kan også se hver kørsel under fanen **Actions**. En rød kørsel betyder, a
 
 - `queue/` – køen af opslag, én mappe pr. opslag med billeder og `opslag.json`
 - `maskine/` – indholdsmaskinen, der laver billederne (se `maskine/LAESMIG.md`)
-- `scripts/` – posting, kø og fornyelse af nøglen
+- `scripts/` – posting og kø
 - `OPSÆTNING.md` – engangsopsætning af Instagram-adgang

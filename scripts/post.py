@@ -22,7 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
-API = f"https://graph.instagram.com/{CONFIG.get('api_version', 'v25.0')}"
+API = f"{CONFIG.get('api_host', 'https://graph.facebook.com').rstrip('/')}/{CONFIG.get('api_version', 'v25.0')}"
 TOKEN = os.environ.get("IG_TOKEN", "").strip()
 
 
@@ -89,6 +89,9 @@ def main():
     if not TOKEN:
         print("Mangler hemmeligheden IG_TOKEN. Se OPSÆTNING.md.")
         return 1
+    if not os.environ.get("IG_USER_ID", "").strip():
+        print("Mangler hemmeligheden IG_USER_ID. Se OPSÆTNING.md.")
+        return 1
     if not CONFIG.get("pages_base_url"):
         print("Mangler pages_base_url i config.json.")
         return 1
@@ -114,8 +117,6 @@ def main():
             print(f"{folder.name}: udløbet")
         else:
             try:
-                if not user_id:
-                    user_id = str(call("GET", "me", {"fields": "user_id"})["user_id"])
                 media_id = publish(user_id, folder, post)
                 post["status"] = "postet"
                 post["instagram_id"] = media_id
