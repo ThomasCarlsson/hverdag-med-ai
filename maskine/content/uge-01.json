@@ -1,0 +1,245 @@
+{
+  "account": "@hverdag.med.ai",
+  "week": "Uge 1",
+  "posts": [
+    {
+      "slug": "01-madplan",
+      "day": "Mandag",
+      "pillar": "AI-trick",
+      "theme": "green",
+      "illustration": "madplan",
+      "cover": {
+        "kicker": "AI-TRICK",
+        "title": "Ugens madplan og indkøbsliste på 2 minutter",
+        "subtitle": "Sådan lader du AI gøre det kedelige arbejde"
+      },
+      "slides": [
+        {
+          "type": "step",
+          "label": "Trin 1",
+          "title": "Fortæl, hvad du har",
+          "body": "Skriv hvad der står i køleskabet, hvor mange I er, og hvor meget tid du har til madlavning på hverdage."
+        },
+        {
+          "type": "step",
+          "label": "Trin 2",
+          "title": "Sæt rammerne",
+          "body": "Budget, børnevenligt, to vegetardage, intet med svampe. Jo mere du fortæller, jo bedre bliver planen."
+        },
+        {
+          "type": "step",
+          "label": "Trin 3",
+          "title": "Bed om én samlet indkøbsliste",
+          "body": "Få den sorteret efter afdelinger i supermarkedet, så du ikke løber frem og tilbage."
+        },
+        {
+          "type": "step",
+          "label": "Trin 4",
+          "title": "Brug resterne smart",
+          "body": "Bed AI'en planlægge, så resterne fra mandag bliver til frokost tirsdag. Mindre madspild, færre indkøb."
+        },
+        {
+          "type": "prompt",
+          "label": "Kopiér prompten",
+          "title": "Prøv selv",
+          "body": "Lav en madplan for 5 hverdage til 2 voksne og 2 børn. Max 30 min. pr. ret. To dage skal være vegetar. Jeg har allerede: [skriv dine varer]. Lav derefter én samlet indkøbsliste sorteret efter afdelinger."
+        },
+        {
+          "type": "cta",
+          "title": "Gem opslaget til søndag",
+          "body": "Så har du det klar, når ugen skal planlægges. Følg med for flere hverdagstricks med AI."
+        }
+      ],
+      "caption": "Søndagens madplan behøver ikke tage en time 🥕\n\nMed den rigtige besked laver en AI-assistent både madplan og indkøbsliste på et par minutter. Kopiér prompten på slide 6, og tilpas den til din familie.\n\nGem opslaget, så du har det klar til næste uge.",
+      "hashtags": [
+        "#madplan",
+        "#hverdagstips",
+        "#kunstigintelligens",
+        "#AItips",
+        "#smartehverdag",
+        "#travlhverdag"
+      ]
+    },
+    {
+      "slug": "02-fem-prompts",
+      "day": "Onsdag",
+      "pillar": "Prompts",
+      "theme": "navy",
+      "illustration": "prompts",
+      "cover": {
+        "kicker": "GEM DEN HER",
+        "title": "5 prompts, der sparer dig tid hver uge",
+        "subtitle": "Kopiér, tilpas, brug"
+      },
+      "slides": [
+        {
+          "type": "prompt",
+          "label": "Prompt 1 · Den svære mail",
+          "title": "Når du ikke ved, hvordan du skal formulere det",
+          "body": "Hjælp mig med at skrive en venlig men tydelig mail til [hvem]. Jeg vil gerne sige [hvad]. Hold den kort."
+        },
+        {
+          "type": "prompt",
+          "label": "Prompt 2 · Den lange tekst",
+          "title": "Når du ikke har tid til at læse det hele",
+          "body": "Opsummér denne tekst i 5 punkter, og fortæl mig, om der er noget, jeg skal gøre: [indsæt tekst]"
+        },
+        {
+          "type": "prompt",
+          "label": "Prompt 3 · Den kaotiske dag",
+          "title": "Når to-do-listen er alt for lang",
+          "body": "Her er mine opgaver i dag: [liste]. Jeg har [antal] timer. Hjælp mig med at prioritere, og læg en realistisk plan."
+        },
+        {
+          "type": "prompt",
+          "label": "Prompt 4 · Det svære emne",
+          "title": "Når du skal forstå noget nyt",
+          "body": "Forklar [emne] for mig, som om jeg var 12 år. Brug et eksempel fra hverdagen."
+        },
+        {
+          "type": "prompt",
+          "label": "Prompt 5 · Gaveidéen",
+          "title": "Når du er løbet tør for idéer",
+          "body": "Giv mig 10 gaveidéer til [person], som er [alder] og elsker [interesser]. Budget: [beløb] kr."
+        },
+        {
+          "type": "cta",
+          "title": "Hvilken bruger du først?",
+          "body": "Skriv nummeret i kommentarerne, og gem opslaget til næste gang, du sidder fast."
+        }
+      ],
+      "caption": "Fem små beskeder, der kan spare dig mange minutter hver uge ⏱️\n\nUdskift teksten i [klammer] med dine egne detaljer, og se forskellen.\n\nHvilken prøver du først? Skriv nummeret nedenfor 👇",
+      "hashtags": [
+        "#prompts",
+        "#AItips",
+        "#produktivitet",
+        "#kunstigintelligens",
+        "#smartehverdag",
+        "#hverdagshacks"
+      ]
+    },
+    {
+      "slug": "03-weekendtur",
+      "day": "Fredag",
+      "pillar": "Før og efter",
+      "theme": "mustard",
+      "illustration": "weekend",
+      "cover": {
+        "kicker": "FØR / EFTER",
+        "title": "Planlæg en weekendtur på 10 minutter",
+        "subtitle": "I stedet for en hel aften med 15 åbne faner"
+      },
+      "slides": [
+        {
+          "type": "compare",
+          "label": "Før",
+          "title": "2 timers research",
+          "body": "Rejseblogs, kort, anmeldelser, åbningstider og en note i telefonen, der aldrig bliver færdig."
+        },
+        {
+          "type": "compare",
+          "label": "Nu",
+          "title": "Én god besked",
+          "body": "Fortæl AI'en hvor, hvornår, hvem I er, og hvad I kan lide. Få et forslag til hele weekenden."
+        },
+        {
+          "type": "prompt",
+          "label": "Kopiér prompten",
+          "title": "Prøv selv",
+          "body": "Planlæg en weekend i [by] for [hvem]. Vi kan lide [interesser] og vil ikke stresse. Lav en plan for lørdag og søndag med ét hovedpunkt formiddag og eftermiddag, og forslag til hyggelige spisesteder i hvert område."
+        },
+        {
+          "type": "tip",
+          "label": "Vigtigt",
+          "title": "Tjek altid detaljerne selv",
+          "body": "AI'en kan tage fejl af åbningstider, priser og om et sted stadig findes. Brug planen som udkast, og tjek de vigtige ting før afgang."
+        },
+        {
+          "type": "cta",
+          "title": "Hvor skal du hen næste gang?",
+          "body": "Skriv byen i kommentarerne, og gem opslaget til næste tur."
+        }
+      ],
+      "caption": "Fra 15 åbne faner til én færdig plan ✈️\n\nAI er fantastisk til at lave første udkast til en tur. Bare husk at tjekke åbningstider og priser selv, før I tager afsted.\n\nHvor går næste tur hen?",
+      "hashtags": [
+        "#weekendtur",
+        "#rejsetips",
+        "#AItips",
+        "#kunstigintelligens",
+        "#smartehverdag",
+        "#storbyferie"
+      ]
+    },
+    {
+      "slug": "04-gaatur",
+      "day": "Lørdag",
+      "pillar": "Billedopslag",
+      "type": "image",
+      "theme": "green",
+      "scene": "hund-gaatur",
+      "tip_label": "Dagens tip",
+      "tip": "Tag en gåtur uden telefonen i dag. 15 minutter er nok til at få luft i hovedet.",
+      "caption": "Nogle gange er det smarteste, du kan gøre, at lægge telefonen 🐾\n\nTag en kort tur uden skærm i dag. Vil du prøve en ny rute? Bed en AI-assistent om forslag til en gåtur på 15-20 minutter i dit nabolag.\n\nHvem tager du med på tur?",
+      "hashtags": [
+        "#gåtur",
+        "#hverdagstips",
+        "#mindreskærmtid",
+        "#godevaner",
+        "#smartehverdag",
+        "#hund"
+      ]
+    },
+    {
+      "slug": "05-fire-fejl",
+      "day": "Søndag",
+      "pillar": "Fejl og myter",
+      "theme": "terracotta",
+      "illustration": "fejl",
+      "cover": {
+        "kicker": "UNDGÅ DET HER",
+        "title": "4 fejl, de fleste laver med AI",
+        "subtitle": "Nummer 3 er den vigtigste"
+      },
+      "slides": [
+        {
+          "type": "mistake",
+          "label": "Fejl 1",
+          "title": "Alt for korte spørgsmål",
+          "body": "\"Skriv en mail\" giver et kedeligt svar. Fortæl hvem, hvorfor og i hvilken tone, så rammer svaret meget bedre."
+        },
+        {
+          "type": "mistake",
+          "label": "Fejl 2",
+          "title": "At stole blindt på fakta",
+          "body": "AI kan lyde sikker og stadig tage fejl. Tjek tal, datoer og regler, før du bruger dem til noget vigtigt."
+        },
+        {
+          "type": "mistake",
+          "label": "Fejl 3",
+          "title": "At dele for meget",
+          "body": "Skriv aldrig CPR-nummer, kodeord, kortoplysninger eller andres private oplysninger ind i en chat med AI."
+        },
+        {
+          "type": "mistake",
+          "label": "Fejl 4",
+          "title": "At give op efter første svar",
+          "body": "Det første svar er et udkast. Skriv \"gør den kortere\", \"mere personlig\" eller \"giv mig 3 andre forslag\"."
+        },
+        {
+          "type": "cta",
+          "title": "Send den til en, der er ny med AI",
+          "body": "Og følg med for flere hverdagstips hver uge."
+        }
+      ],
+      "caption": "AI er et smart værktøj, men kun hvis du bruger det rigtigt 🧠\n\nSærligt nummer 3 er vigtig: Personlige oplysninger hører ikke hjemme i en chat.\n\nKender du en, der lige er gået i gang med AI? Send dem opslaget.",
+      "hashtags": [
+        "#AItips",
+        "#kunstigintelligens",
+        "#digitalsikkerhed",
+        "#smartehverdag",
+        "#lærAI",
+        "#hverdagstips"
+      ]
+    }
+  ]
+}

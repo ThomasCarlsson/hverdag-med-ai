@@ -1,0 +1,25 @@
+{
+  "account": "@hverdag.med.ai",
+  "weeks": [
+    {
+      "week": "uge-01",
+      "topics": [
+        "Madplan og indkøbsliste med AI",
+        "5 prompts der sparer tid (svær mail, opsummering, prioritering af dagen, forklar som til 12-årig, gaveidéer)",
+        "Planlæg en weekendtur på 10 minutter",
+        "Gåtur uden telefon (billedopslag, hund)",
+        "4 fejl med AI (korte spørgsmål, blind tillid til fakta, deling af persondata, give op efter første svar)"
+      ],
+      "themes": [
+        "green",
+        "navy",
+        "mustard",
+        "green",
+        "terracotta"
+      ],
+      "scenes": [
+        "hund-gaatur"
+      ]
+    }
+  ]
+}

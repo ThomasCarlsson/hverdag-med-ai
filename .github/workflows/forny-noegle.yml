@@ -1,0 +1,34 @@
+name: Forny Instagram-nøgle
+
+on:
+  schedule:
+    - cron: "17 3 1,15 * *"   # den 1. og 15. i hver måned
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  forny:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Forny nøglen
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          NY_NOEGLE_FIL: ${{ runner.temp }}/ny_noegle
+        run: python3 scripts/refresh_token.py
+
+      - name: Gem den nye nøgle som hemmelighed
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          NY_NOEGLE_FIL: ${{ runner.temp }}/ny_noegle
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::GH_PAT mangler, så den fornyede nøgle kan ikke gemmes. Se OPSÆTNING.md."
+            exit 0
+          fi
+          gh secret set IG_TOKEN --repo "${{ github.repository }}" < "$NY_NOEGLE_FIL"
+          rm -f "$NY_NOEGLE_FIL"
+          echo "Ny nøgle gemt."

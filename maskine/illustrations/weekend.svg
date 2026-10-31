@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <ellipse cx="450" cy="492" rx="370" ry="22" fill="#000000" opacity="0.12"/>
+  <!-- sun -->
+  <circle cx="770" cy="90" r="56" fill="#FFFFFF" opacity="0.9"/>
+  <!-- folded map -->
+  <g>
+    <path d="M90 200 L250 170 L410 200 L570 170 L570 470 L410 500 L250 470 L90 500 Z" fill="#F5F0E8"/>
+    <path d="M250 170 L410 200 L410 500 L250 470 Z" fill="#E6DFD2"/>
+    <path d="M90 200 L250 170 L250 470 L90 500 Z" fill="#EFE8DC"/>
+    <path d="M140 300 q60 -50 120 0 t120 10 q60 -40 120 -20" fill="none" stroke="#2E5E4E" stroke-width="8" stroke-linecap="round" stroke-dasharray="4 20"/>
+    <circle cx="140" cy="300" r="12" fill="#2E5E4E"/>
+    <ellipse cx="200" cy="410" rx="56" ry="30" fill="#BFD8C6"/>
+    <ellipse cx="470" cy="420" rx="60" ry="28" fill="#B9D2E6"/>
+  </g>
+  <!-- pin -->
+  <g>
+    <path d="M500 290 C450 230 440 200 440 175 A60 60 0 0 1 560 175 C560 200 550 230 500 290 Z" fill="#D9573F"/>
+    <circle cx="500" cy="176" r="24" fill="#FFFFFF"/>
+  </g>
+  <!-- suitcase -->
+  <g>
+    <rect x="660" y="230" width="60" height="40" rx="14" fill="none" stroke="#1E2B2F" stroke-width="12"/>
+    <rect x="610" y="262" width="160" height="210" rx="24" fill="#2E5E4E"/>
+    <rect x="640" y="262" width="22" height="210" fill="#F5F0E8" opacity="0.85"/>
+    <rect x="718" y="262" width="22" height="210" fill="#F5F0E8" opacity="0.85"/>
+    <circle cx="640" cy="480" r="12" fill="#1E2B2F"/>
+    <circle cx="740" cy="480" r="12" fill="#1E2B2F"/>
+    <rect x="676" y="320" width="34" height="34" rx="8" fill="#D9573F" transform="rotate(12 693 337)"/>
+  </g>
+  <!-- clouds -->
+  <g fill="#FFFFFF" opacity="0.9">
+    <ellipse cx="180" cy="80" rx="60" ry="22"/><ellipse cx="215" cy="66" rx="36" ry="26"/>
+    <ellipse cx="560" cy="60" rx="46" ry="16"/><ellipse cx="585" cy="50" rx="28" ry="20"/>
+  </g>
+</svg>
