@@ -96,6 +96,14 @@ def main():
         print("Mangler pages_base_url i config.json.")
         return 1
 
+    if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch":
+        try:
+            info = call("GET", os.environ["IG_USER_ID"].strip(), {"fields": "username"})
+            print(f"Forbindelsen virker: forbundet til @{info.get('username')}.")
+        except Exception as e:  # noqa: BLE001
+            print(f"Forbindelsen virker ikke: {e}")
+            return 1
+
     now = datetime.now(timezone.utc)
     max_late = float(CONFIG.get("max_forsinkelse_timer", 12)) * 3600
     user_id = os.environ.get("IG_USER_ID", "").strip()
