@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <ellipse cx="450" cy="492" rx="360" ry="22" fill="#000000" opacity="0.13"/>
+  <!-- schedule board -->
+  <g transform="rotate(-4 250 280)">
+    <rect x="90" y="120" width="320" height="340" rx="22" fill="#FFFFFF"/>
+    <rect x="90" y="120" width="320" height="64" rx="22" fill="#2E5E4E"/>
+    <rect x="90" y="160" width="320" height="24" fill="#2E5E4E"/>
+    <g fill="#F5F0E8"><circle cx="135" cy="152" r="9"/><circle cx="165" cy="152" r="9"/><circle cx="195" cy="152" r="9"/></g>
+    <g>
+      <circle cx="136" cy="230" r="18" fill="#F2B544"/><rect x="170" y="222" width="200" height="16" rx="8" fill="#E6DFD2"/>
+      <circle cx="136" cy="290" r="18" fill="#6FA37F"/><rect x="170" y="282" width="160" height="16" rx="8" fill="#E6DFD2"/>
+      <circle cx="136" cy="350" r="18" fill="#C8643F"/><rect x="170" y="342" width="185" height="16" rx="8" fill="#E6DFD2"/>
+      <circle cx="136" cy="410" r="18" fill="#F2B544"/><rect x="170" y="402" width="140" height="16" rx="8" fill="#E6DFD2"/>
+    </g>
+    <g fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M128 230 l6 6 l11 -12"/><path d="M128 290 l6 6 l11 -12"/>
+    </g>
+  </g>
+  <!-- bucket -->
+  <path d="M520 330 L700 330 L680 480 L540 480 Z" fill="#F2B544"/>
+  <rect x="510" y="314" width="200" height="30" rx="15" fill="#E0A231"/>
+  <path d="M528 330 Q610 220 692 330" fill="none" stroke="#1E2B2F" stroke-width="10" stroke-linecap="round"/>
+  <!-- bubbles -->
+  <g fill="#FFFFFF" opacity="0.95">
+    <circle cx="560" cy="300" r="26"/><circle cx="600" cy="286" r="32"/><circle cx="648" cy="298" r="24"/>
+    <circle cx="590" cy="250" r="16"/><circle cx="660" cy="250" r="12"/>
+  </g>
+  <!-- broom -->
+  <g transform="rotate(16 790 300)">
+    <rect x="780" y="70" width="18" height="300" rx="9" fill="#8A5A3B"/>
+    <path d="M740 360 h98 l20 120 h-138 z" fill="#E3B98A"/>
+    <rect x="736" y="350" width="106" height="24" rx="10" fill="#2E5E4E"/>
+    <g stroke="#CF9F6D" stroke-width="5" stroke-linecap="round"><path d="M760 390 l-6 80"/><path d="M790 390 v84"/><path d="M820 390 l6 80"/></g>
+  </g>
+  <!-- sparkles -->
+  <g fill="#FFFFFF">
+    <path d="M470 120 l9 25 l25 9 l-25 9 l-9 25 l-9 -25 l-25 -9 l25 -9 z"/>
+    <path d="M700 150 l6 16 l16 6 l-16 6 l-6 16 l-6 -16 l-16 -6 l16 -6 z"/>
+  </g>
+</svg>

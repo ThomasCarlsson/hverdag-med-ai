@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <!-- warm wall -->
+  <rect width="1080" height="1350" fill="#F1E4CC"/>
+  <!-- window frame -->
+  <rect x="150" y="90" width="780" height="700" rx="40" fill="#FFFFFF"/>
+  <rect x="180" y="120" width="720" height="640" rx="24" fill="#9FB8C9"/>
+  <!-- outside: autumn trees, rain -->
+  <path d="M180 600 Q400 540 620 590 T900 570 L900 760 L180 760 Z" fill="#7F9E8A"/>
+  <rect x="300" y="460" width="22" height="160" rx="10" fill="#6E4A33"/>
+  <circle cx="311" cy="430" r="90" fill="#D98A3F"/>
+  <circle cx="260" cy="470" r="56" fill="#C8643F"/>
+  <rect x="740" y="480" width="20" height="140" rx="9" fill="#6E4A33"/>
+  <circle cx="750" cy="450" r="80" fill="#E2A74A"/>
+  <g stroke="#E9F1F6" stroke-width="5" stroke-linecap="round" opacity="0.8">
+    <path d="M240 160 l-12 34"/><path d="M380 210 l-12 34"/><path d="M520 150 l-12 34"/><path d="M660 230 l-12 34"/><path d="M820 170 l-12 34"/>
+    <path d="M300 320 l-12 34"/><path d="M460 300 l-12 34"/><path d="M600 360 l-12 34"/><path d="M860 330 l-12 34"/><path d="M220 400 l-12 34"/>
+  </g>
+  <!-- window cross -->
+  <rect x="530" y="120" width="20" height="640" fill="#FFFFFF"/>
+  <rect x="180" y="420" width="720" height="18" fill="#FFFFFF"/>
+  <!-- curtains -->
+  <path d="M100 70 Q180 60 200 90 Q170 420 210 820 L100 820 Z" fill="#2E5E4E"/>
+  <path d="M980 70 Q900 60 880 90 Q910 420 870 820 L980 820 Z" fill="#2E5E4E"/>
+  <!-- windowsill -->
+  <rect x="110" y="780" width="860" height="50" rx="16" fill="#FFFFFF"/>
+  <rect x="130" y="826" width="820" height="20" rx="8" fill="#E6DCC8"/>
+  <!-- plant -->
+  <path d="M820 780 L870 780 L862 712 L828 712 Z" fill="#C8643F"/>
+  <g fill="#6FA37F">
+    <ellipse cx="830" cy="680" rx="18" ry="38" transform="rotate(-25 830 680)"/>
+    <ellipse cx="862" cy="672" rx="18" ry="42" transform="rotate(20 862 672)"/>
+    <ellipse cx="846" cy="660" rx="16" ry="44"/>
+  </g>
+  <!-- mug -->
+  <rect x="235" y="700" width="78" height="82" rx="16" fill="#F2B544"/>
+  <path d="M313 718 q34 6 0 44" fill="none" stroke="#F2B544" stroke-width="12"/>
+  <path d="M258 690 q12 -20 0 -40 M286 690 q12 -20 0 -40" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <!-- cat (sitting, back slightly turned, looking at us) -->
+  <ellipse cx="560" cy="785" rx="170" ry="16" fill="#000000" opacity="0.08"/>
+  <path d="M700 760 C780 760 790 690 740 680" fill="none" stroke="#9AA3AD" stroke-width="30" stroke-linecap="round"/>
+  <ellipse cx="560" cy="700" rx="150" ry="90" fill="#B7BEC6"/>
+  <ellipse cx="540" cy="720" rx="80" ry="54" fill="#DDE2E7"/>
+  <ellipse cx="470" cy="775" rx="40" ry="18" fill="#DDE2E7"/>
+  <ellipse cx="560" cy="778" rx="40" ry="18" fill="#DDE2E7"/>
+  <!-- head -->
+  <circle cx="520" cy="580" r="100" fill="#B7BEC6"/>
+  <path d="M440 520 L430 430 L500 490 Z" fill="#B7BEC6"/>
+  <path d="M600 520 L610 430 L540 490 Z" fill="#B7BEC6"/>
+  <path d="M448 505 L442 455 L482 488 Z" fill="#F0B3A6"/>
+  <path d="M592 505 L598 455 L558 488 Z" fill="#F0B3A6"/>
+  <ellipse cx="520" cy="620" rx="58" ry="40" fill="#DDE2E7"/>
+  <!-- closed happy eyes -->
+  <path d="M472 578 q16 -18 32 0" fill="none" stroke="#2B2B3A" stroke-width="7" stroke-linecap="round"/>
+  <path d="M536 578 q16 -18 32 0" fill="none" stroke="#2B2B3A" stroke-width="7" stroke-linecap="round"/>
+  <path d="M510 604 h20 l-10 12 z" fill="#E28A86"/>
+  <path d="M520 616 v8 M520 624 q-12 10 -22 2 M520 624 q12 10 22 2" fill="none" stroke="#2B2B3A" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="462" cy="610" rx="16" ry="9" fill="#F0B3A6" opacity="0.7"/>
+  <ellipse cx="578" cy="610" rx="16" ry="9" fill="#F0B3A6" opacity="0.7"/>
+  <!-- stripes -->
+  <g stroke="#9AA3AD" stroke-width="10" stroke-linecap="round">
+    <path d="M500 500 v24"/><path d="M520 494 v30"/><path d="M540 500 v24"/>
+    <path d="M660 660 q14 20 0 40"/><path d="M690 676 q12 16 0 34"/>
+  </g>
+  <!-- calm floor below for tip card -->
+  <rect x="0" y="846" width="1080" height="504" fill="#E8D8BB"/>
+  <rect x="0" y="846" width="1080" height="14" fill="#DCCAA8"/>
+</svg>

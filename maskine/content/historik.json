@@ -20,6 +20,27 @@
       "scenes": [
         "hund-gaatur"
       ]
+    },
+    {
+      "week": "uge-02",
+      "topics": [
+        "Fair fordeling af husets pligter med AI",
+        "5 prompts til hyggelige aftener (film, spil, bøger, date-aften, rolig aftenrutine)",
+        "Sælg brugte ting med en AI-skrevet annonce",
+        "Vinduespause uden telefon (billedopslag, kat ved vindue)",
+        "4 myter om AI (ved alt, kun for nørder, skal skrive engelsk, bestemmer over mig)"
+      ],
+      "themes": [
+        "terracotta",
+        "navy",
+        "green",
+        "mustard",
+        "terracotta"
+      ],
+      "scenes": [
+        "kat-vindue"
+      ],
+      "note": "Uge 1 blev postet samlet 2. nov. for at give profilen indhold; uge 2 kører tir-søn samme uge."
     }
   ]
 }

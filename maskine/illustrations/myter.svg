@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <ellipse cx="450" cy="495" rx="320" ry="20" fill="#000000" opacity="0.14"/>
+  <!-- big lightbulb -->
+  <circle cx="450" cy="210" r="150" fill="#F5F0E8" opacity="0.25"/>
+  <path d="M450 70 a130 130 0 0 1 80 232 q-18 14 -18 40 v20 h-124 v-20 q0 -26 -18 -40 a130 130 0 0 1 80 -232 z" fill="#F2B544"/>
+  <rect x="388" y="362" width="124" height="26" rx="10" fill="#F5F0E8"/>
+  <rect x="396" y="392" width="108" height="24" rx="10" fill="#E6DFD2"/>
+  <path d="M414 420 h72 q-6 30 -36 30 q-30 0 -36 -30 z" fill="#1E2B2F"/>
+  <!-- question mark in bulb -->
+  <path d="M418 180 q0 -46 34 -46 q34 0 34 36 q0 22 -24 34 q-12 6 -12 28" fill="none" stroke="#1E2B2F" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="450" cy="278" r="13" fill="#1E2B2F"/>
+  <!-- left: crossed bubble -->
+  <g transform="rotate(-8 170 230)">
+    <path d="M90 150 h160 a24 24 0 0 1 24 24 v90 a24 24 0 0 1 -24 24 h-100 l-40 34 v-34 h-20 a24 24 0 0 1 -24 -24 v-90 a24 24 0 0 1 24 -24 z" fill="#FFFFFF"/>
+    <circle cx="170" cy="219" r="38" fill="#C8643F"/>
+    <path d="M154 203 l32 32 M186 203 l-32 32" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <!-- right: check bubble -->
+  <g transform="rotate(8 730 230)">
+    <path d="M650 150 h160 a24 24 0 0 1 24 24 v90 a24 24 0 0 1 -24 24 h-20 v34 l-40 -34 h-100 a24 24 0 0 1 -24 -24 v-90 a24 24 0 0 1 24 -24 z" fill="#FFFFFF"/>
+    <circle cx="730" cy="219" r="38" fill="#6FA37F"/>
+    <path d="M712 220 l13 13 l25 -27" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- rays -->
+  <g stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.85">
+    <path d="M450 30 v-14"/><path d="M330 80 l-12 -12"/><path d="M570 80 l12 -12"/>
+  </g>
+</svg>

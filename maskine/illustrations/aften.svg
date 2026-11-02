@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <ellipse cx="450" cy="495" rx="380" ry="20" fill="#000000" opacity="0.18"/>
+  <!-- moon & stars -->
+  <circle cx="770" cy="90" r="48" fill="#F5F0E8"/>
+  <circle cx="790" cy="76" r="44" fill="#263A5E"/>
+  <g fill="#F2B544"><circle cx="640" cy="60" r="5"/><circle cx="700" cy="150" r="4"/><circle cx="120" cy="80" r="5"/><circle cx="220" cy="40" r="4"/></g>
+  <!-- floor lamp -->
+  <rect x="146" y="200" width="12" height="270" rx="6" fill="#1E2B2F"/>
+  <ellipse cx="152" cy="474" rx="46" ry="12" fill="#1E2B2F"/>
+  <path d="M96 200 L208 200 L184 120 L120 120 Z" fill="#F2B544"/>
+  <path d="M110 200 L194 200 L240 470 L64 470 Z" fill="#F2B544" opacity="0.12"/>
+  <!-- sofa -->
+  <rect x="250" y="250" width="440" height="140" rx="44" fill="#C8643F"/>
+  <rect x="220" y="320" width="500" height="120" rx="40" fill="#D9774F"/>
+  <rect x="200" y="300" width="70" height="150" rx="32" fill="#C8643F"/>
+  <rect x="670" y="300" width="70" height="150" rx="32" fill="#C8643F"/>
+  <rect x="240" y="440" width="22" height="40" rx="8" fill="#1E2B2F"/>
+  <rect x="678" y="440" width="22" height="40" rx="8" fill="#1E2B2F"/>
+  <!-- cushions -->
+  <rect x="290" y="270" width="110" height="90" rx="26" fill="#F2B544" transform="rotate(-8 345 315)"/>
+  <rect x="540" y="270" width="110" height="90" rx="26" fill="#6FA37F" transform="rotate(8 595 315)"/>
+  <!-- blanket -->
+  <path d="M420 330 h160 v120 q-80 18 -160 0 z" fill="#F5F0E8"/>
+  <g stroke="#E6DFD2" stroke-width="8"><path d="M420 360 h160"/><path d="M420 400 h160"/></g>
+  <!-- book & mug on side table -->
+  <rect x="770" y="380" width="96" height="14" rx="6" fill="#F5F0E8"/>
+  <rect x="806" y="394" width="14" height="80" fill="#F5F0E8"/>
+  <rect x="772" y="352" width="70" height="26" rx="5" fill="#6FA37F"/>
+  <rect x="780" y="328" width="62" height="24" rx="5" fill="#F2B544"/>
+  <rect x="846" y="340" width="30" height="40" rx="8" fill="#FFFFFF"/>
+  <path d="M876 350 q16 6 0 20" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+  <path d="M856 326 q8 -12 0 -24 M866 326 q8 -12 0 -24" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+</svg>
