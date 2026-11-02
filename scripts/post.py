@@ -109,7 +109,8 @@ def main():
     user_id = os.environ.get("IG_USER_ID", "").strip()
     failed = False
 
-    for folder in sorted(p for p in (ROOT / "queue").iterdir() if p.is_dir()):
+    due = []
+    for folder in (p for p in (ROOT / "queue").iterdir() if p.is_dir()):
         f = folder / "opslag.json"
         if not f.exists():
             continue
@@ -117,8 +118,11 @@ def main():
         if post.get("status") != "klar":
             continue
         when = datetime.fromisoformat(post["tidspunkt"])
-        if when > now:
-            continue
+        if when <= now:
+            due.append((when, folder, f, post))
+
+    # Ældste tidspunkt først, så rækkefølgen på profilen følger planen
+    for when, folder, f, post in sorted(due, key=lambda x: x[0]):
         if (now - when).total_seconds() > max_late:
             post["status"] = "udløbet"
             post["note"] = f"Ikke postet inden for {CONFIG.get('max_forsinkelse_timer', 12)} timer efter planlagt tidspunkt."
