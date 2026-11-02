@@ -29,3 +29,12 @@ Et opslag med `"type": "image"` bliver ét billede: en tegnet scene i fuld stør
 3. **Posting:** Upload de godkendte karruseller med et planlægningsværktøj eller direkte via Instagrams officielle API (kræver en creator- eller businesskonto).
 
 Svar på kommentarer manuelt.
+
+## Prompt-siden
+
+Instagram kan ikke kopiere tekst fra billeder, så alle prompts ligger også på
+https://thomascarlsson.github.io/hverdag-med-ai/prompts/ med en kopier-knap pr. prompt.
+Linket står i Instagram-bioen. Siden bygges af `scripts/build_prompts.py` og viser kun
+prompts fra opslag, der er postet, nyeste først. Den opdateres automatisk efter hver posting.
+Prompt-slides skal have label "Prøv prompten" (ikke "Kopiér"), og billedteksten skal have
+linjen "🔗 Kopiér prompten med ét tryk via linket i bio."

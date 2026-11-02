@@ -205,7 +205,7 @@ def _content_body(d, s, kind, pill_bg, pill_fg_col, y):
         box_h = len(lines) * int(38 * 1.42) + 2 * 56 + 30
         d.rounded_rectangle([M, y, W - M, y + box_h], radius=28, fill=C["white"])
         d.rectangle([M, y + 28, M + 10, y + box_h - 28], fill=C["mustard"])
-        d.text((M + 56, y + 50), "KOPIÉR", font=F_semi(24), fill=C["muted"])
+        d.text((M + 56, y + 50), "KOPIÉR DEN VIA LINKET I BIO", font=F_semi(24), fill=C["muted"])
         text_block(d, (M + 56, y + 100), s["body"], bf, C["ink"], inner, lh=1.42)
         return y + box_h
     else:

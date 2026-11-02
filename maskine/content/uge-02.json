@@ -14,15 +14,51 @@
         "subtitle": "Lad AI lave en fair plan for husets pligter"
       },
       "slides": [
-        {"type": "step", "label": "Trin 1", "title": "Skriv alle pligterne ned", "body": "Opvask, vasketøj, støvsugning, skrald, indkøb. Skriv også hvor tit de skal gøres."},
-        {"type": "step", "label": "Trin 2", "title": "Fortæl, hvem I er", "body": "Hvor mange bor I, hvor gamle er børnene, og hvem har travlt hvilke dage?"},
-        {"type": "step", "label": "Trin 3", "title": "Bed om en ugeplan", "body": "Få pligterne fordelt, så alle får en rimelig andel, og ingen har det hele samme dag."},
-        {"type": "step", "label": "Trin 4", "title": "Sæt den på køleskabet", "body": "Bed om planen som en enkel tabel, du kan printe. Byt rundt hver uge, så det ikke altid er de samme opgaver."},
-        {"type": "prompt", "label": "Kopiér prompten", "title": "Prøv selv", "body": "Vi er [antal] i husstanden: [navne og alder]. Her er vores pligter, og hvor tit de skal gøres: [liste]. Lav en fair ugeplan som en tabel, hvor opgaverne passer til alderen. Tag hensyn til, at [hvem] har travlt [hvilke dage]."}
-        ,{"type": "cta", "title": "Gem den til næste familiemøde", "body": "Og følg med for flere hverdagstricks med AI."}
+        {
+          "type": "step",
+          "label": "Trin 1",
+          "title": "Skriv alle pligterne ned",
+          "body": "Opvask, vasketøj, støvsugning, skrald, indkøb. Skriv også hvor tit de skal gøres."
+        },
+        {
+          "type": "step",
+          "label": "Trin 2",
+          "title": "Fortæl, hvem I er",
+          "body": "Hvor mange bor I, hvor gamle er børnene, og hvem har travlt hvilke dage?"
+        },
+        {
+          "type": "step",
+          "label": "Trin 3",
+          "title": "Bed om en ugeplan",
+          "body": "Få pligterne fordelt, så alle får en rimelig andel, og ingen har det hele samme dag."
+        },
+        {
+          "type": "step",
+          "label": "Trin 4",
+          "title": "Sæt den på køleskabet",
+          "body": "Bed om planen som en enkel tabel, du kan printe. Byt rundt hver uge, så det ikke altid er de samme opgaver."
+        },
+        {
+          "type": "prompt",
+          "label": "Prøv prompten",
+          "title": "Prøv selv",
+          "body": "Vi er [antal] i husstanden: [navne og alder]. Her er vores pligter, og hvor tit de skal gøres: [liste]. Lav en fair ugeplan som en tabel, hvor opgaverne passer til alderen. Tag hensyn til, at [hvem] har travlt [hvilke dage]."
+        },
+        {
+          "type": "cta",
+          "title": "Gem den til næste familiemøde",
+          "body": "Og følg med for flere hverdagstricks med AI."
+        }
       ],
-      "caption": "Hvem tømte opvaskeren sidst? 🧽\n\nEn AI-assistent kan lave en fair fordeling af husets pligter på et øjeblik, så I kan bruge tiden på noget sjovere end at diskutere. Kopiér prompten, og tilpas den til jeres hjem.\n\nGem opslaget til næste familiemøde.",
-      "hashtags": ["#hverdagstips", "#familieliv", "#rengøring", "#AItips", "#kunstigintelligens", "#smartehverdag"]
+      "caption": "Hvem tømte opvaskeren sidst? 🧽\n\nEn AI-assistent kan lave en fair fordeling af husets pligter på et øjeblik, så I kan bruge tiden på noget sjovere end at diskutere. Prøv prompten, og tilpas den til jeres hjem.\n\n🔗 Kopiér prompten med ét tryk via linket i bio.\n\nGem opslaget til næste familiemøde.",
+      "hashtags": [
+        "#hverdagstips",
+        "#familieliv",
+        "#rengøring",
+        "#AItips",
+        "#kunstigintelligens",
+        "#smartehverdag"
+      ]
     },
     {
       "slug": "02-hyggelige-aftener",
@@ -36,15 +72,51 @@
         "subtitle": "Når I ikke kan blive enige om, hvad I skal"
       },
       "slides": [
-        {"type": "prompt", "label": "Prompt 1 · Filmaftenen", "title": "Når I har scrollet i en halv time", "body": "Foreslå 5 film til en hyggelig aften for [hvem]. Vi kan lide [genre] og så sidst [film]. Ingen gys."},
-        {"type": "prompt", "label": "Prompt 2 · Spilleaftenen", "title": "Når der skal ske noget uden skærm", "body": "Giv mig 5 lege eller spil til [antal] personer i alderen [alder], som kun kræver papir, blyant eller et sæt kort."},
-        {"type": "prompt", "label": "Prompt 3 · Læseaftenen", "title": "Når du mangler en god bog", "body": "Jeg elskede [bog] og [bog]. Foreslå 5 bøger i samme stil, og fortæl kort, hvorfor jeg vil kunne lide dem."},
-        {"type": "prompt", "label": "Prompt 4 · Datoaftenen", "title": "Når I vil gøre noget særligt derhjemme", "body": "Giv mig 5 idéer til en hyggelig date-aften derhjemme for to, der kan lide [interesser]. Budget: [beløb] kr."},
-        {"type": "prompt", "label": "Prompt 5 · Den rolige aften", "title": "Når du vil ned i gear", "body": "Hjælp mig med at lave en rolig aftenrutine på 30 minutter uden skærm, der passer til en, der [kort om din hverdag]."},
-        {"type": "cta", "title": "Hvilken aften bliver det i aften?", "body": "Skriv nummeret i kommentarerne, og gem opslaget til næste gang."}
+        {
+          "type": "prompt",
+          "label": "Prompt 1 · Filmaftenen",
+          "title": "Når I har scrollet i en halv time",
+          "body": "Foreslå 5 film til en hyggelig aften for [hvem]. Vi kan lide [genre] og så sidst [film]. Ingen gys."
+        },
+        {
+          "type": "prompt",
+          "label": "Prompt 2 · Spilleaftenen",
+          "title": "Når der skal ske noget uden skærm",
+          "body": "Giv mig 5 lege eller spil til [antal] personer i alderen [alder], som kun kræver papir, blyant eller et sæt kort."
+        },
+        {
+          "type": "prompt",
+          "label": "Prompt 3 · Læseaftenen",
+          "title": "Når du mangler en god bog",
+          "body": "Jeg elskede [bog] og [bog]. Foreslå 5 bøger i samme stil, og fortæl kort, hvorfor jeg vil kunne lide dem."
+        },
+        {
+          "type": "prompt",
+          "label": "Prompt 4 · Datoaftenen",
+          "title": "Når I vil gøre noget særligt derhjemme",
+          "body": "Giv mig 5 idéer til en hyggelig date-aften derhjemme for to, der kan lide [interesser]. Budget: [beløb] kr."
+        },
+        {
+          "type": "prompt",
+          "label": "Prompt 5 · Den rolige aften",
+          "title": "Når du vil ned i gear",
+          "body": "Hjælp mig med at lave en rolig aftenrutine på 30 minutter uden skærm, der passer til en, der [kort om din hverdag]."
+        },
+        {
+          "type": "cta",
+          "title": "Hvilken aften bliver det i aften?",
+          "body": "Skriv nummeret i kommentarerne, og gem opslaget til næste gang."
+        }
       ],
-      "caption": "Kender du det, når hele aftenen går med at vælge, hvad man skal? 🛋️\n\nHer er fem prompts, der giver jer forslag på et øjeblik. Udskift teksten i [klammer] med jeres egne ønsker.\n\nHvilken prøver I først?",
-      "hashtags": ["#hygge", "#prompts", "#AItips", "#kunstigintelligens", "#smartehverdag", "#aftenhygge"]
+      "caption": "Kender du det, når hele aftenen går med at vælge, hvad man skal? 🛋️\n\nHer er fem prompts, der giver jer forslag på et øjeblik. Udskift teksten i [klammer] med jeres egne ønsker.\n\n🔗 Kopiér alle fem prompts med ét tryk via linket i bio.\n\nHvilken prøver I først?",
+      "hashtags": [
+        "#hygge",
+        "#prompts",
+        "#AItips",
+        "#kunstigintelligens",
+        "#smartehverdag",
+        "#aftenhygge"
+      ]
     },
     {
       "slug": "03-saelg-brugt",
@@ -58,14 +130,45 @@
         "subtitle": "En god annonce på 2 minutter i stedet for 20"
       },
       "slides": [
-        {"type": "compare", "label": "Før", "title": "Den tomme annonce", "body": "Du stirrer på tekstfeltet, skriver \"sælges, fejler intet\" og håber det bedste."},
-        {"type": "compare", "label": "Nu", "title": "En annonce, der sælger", "body": "Fortæl AI'en kort om tingen, og få en klar, venlig annonce med alle de vigtige detaljer."},
-        {"type": "prompt", "label": "Kopiér prompten", "title": "Prøv selv", "body": "Skriv en kort og venlig salgsannonce til [ting]. Mærke: [mærke]. Stand: [stand]. Mål eller størrelse: [mål]. Afhentes i [by]. Nævn ærligt eventuelle fejl, og giv mig 3 forslag til en fængende overskrift."},
-        {"type": "tip", "label": "Godt at vide", "title": "Sæt selv prisen", "body": "Tjek, hvad lignende ting faktisk sælges for, før du sætter prisen. Og skriv aldrig noget i annoncen, som ikke passer."},
-        {"type": "cta", "title": "Hvad skal ud af gemmerne?", "body": "Skriv det i kommentarerne, og gem opslaget til næste oprydning."}
+        {
+          "type": "compare",
+          "label": "Før",
+          "title": "Den tomme annonce",
+          "body": "Du stirrer på tekstfeltet, skriver \"sælges, fejler intet\" og håber det bedste."
+        },
+        {
+          "type": "compare",
+          "label": "Nu",
+          "title": "En annonce, der sælger",
+          "body": "Fortæl AI'en kort om tingen, og få en klar, venlig annonce med alle de vigtige detaljer."
+        },
+        {
+          "type": "prompt",
+          "label": "Prøv prompten",
+          "title": "Prøv selv",
+          "body": "Skriv en kort og venlig salgsannonce til [ting]. Mærke: [mærke]. Stand: [stand]. Mål eller størrelse: [mål]. Afhentes i [by]. Nævn ærligt eventuelle fejl, og giv mig 3 forslag til en fængende overskrift."
+        },
+        {
+          "type": "tip",
+          "label": "Godt at vide",
+          "title": "Sæt selv prisen",
+          "body": "Tjek, hvad lignende ting faktisk sælges for, før du sætter prisen. Og skriv aldrig noget i annoncen, som ikke passer."
+        },
+        {
+          "type": "cta",
+          "title": "Hvad skal ud af gemmerne?",
+          "body": "Skriv det i kommentarerne, og gem opslaget til næste oprydning."
+        }
       ],
-      "caption": "Oprydning og lidt ekstra i lommen på samme tid 📦\n\nEn god annonce gør det nemmere for køberen at sige ja. Lad en AI-assistent skrive første udkast, og tilpas det, så det passer præcis til din ting.\n\nHvad skal ud af gemmerne hos dig?",
-      "hashtags": ["#brugtsalg", "#oprydning", "#genbrug", "#AItips", "#kunstigintelligens", "#smartehverdag"]
+      "caption": "Oprydning og lidt ekstra i lommen på samme tid 📦\n\nEn god annonce gør det nemmere for køberen at sige ja. Lad en AI-assistent skrive første udkast, og tilpas det, så det passer præcis til din ting.\n\n🔗 Kopiér prompten med ét tryk via linket i bio.\n\nHvad skal ud af gemmerne hos dig?",
+      "hashtags": [
+        "#brugtsalg",
+        "#oprydning",
+        "#genbrug",
+        "#AItips",
+        "#kunstigintelligens",
+        "#smartehverdag"
+      ]
     },
     {
       "slug": "04-vinduespause",
@@ -77,7 +180,14 @@
       "tip_label": "Dagens tip",
       "tip": "Sæt 10 minutter af i dag til bare at kigge ud ad vinduet. Hjernen har også brug for pauser.",
       "caption": "Lørdag, regn på ruden og en kop te ☕\n\nPrøv at sætte 10 minutter af til at lave ingenting. Ingen telefon, ingen to-do-liste. Bare dig, en varm kop og udsigten.\n\nHvad laver du helst, når du skal slappe af?",
-      "hashtags": ["#pause", "#hygge", "#godevaner", "#efterår", "#hverdagstips", "#smartehverdag"]
+      "hashtags": [
+        "#pause",
+        "#hygge",
+        "#godevaner",
+        "#efterår",
+        "#hverdagstips",
+        "#smartehverdag"
+      ]
     },
     {
       "slug": "05-fire-myter",
@@ -91,14 +201,45 @@
         "subtitle": "Nummer 2 holder mange tilbage"
       },
       "slides": [
-        {"type": "mistake", "label": "Myte 1", "title": "\"AI ved alt\"", "body": "AI kan tage fejl og kan mangle de nyeste oplysninger. Brug den som en hjælper, og tjek de vigtige ting selv."},
-        {"type": "mistake", "label": "Myte 2", "title": "\"Det er kun for teknik-nørder\"", "body": "Du skriver bare, som du ville skrive til et menneske. Kan du sende en sms, kan du bruge en AI-assistent."},
-        {"type": "mistake", "label": "Myte 3", "title": "\"Man skal skrive på engelsk\"", "body": "De fleste AI-assistenter forstår dansk fint. Skriv på det sprog, du tænker på."},
-        {"type": "mistake", "label": "Myte 4", "title": "\"AI bestemmer over mig\"", "body": "Det er dig, der beslutter, hvad du bruger svaret til. AI kommer med forslag, du har det sidste ord."},
-        {"type": "cta", "title": "Send den til en, der er skeptisk", "body": "Og følg med for flere hverdagstips hver uge."}
+        {
+          "type": "mistake",
+          "label": "Myte 1",
+          "title": "\"AI ved alt\"",
+          "body": "AI kan tage fejl og kan mangle de nyeste oplysninger. Brug den som en hjælper, og tjek de vigtige ting selv."
+        },
+        {
+          "type": "mistake",
+          "label": "Myte 2",
+          "title": "\"Det er kun for teknik-nørder\"",
+          "body": "Du skriver bare, som du ville skrive til et menneske. Kan du sende en sms, kan du bruge en AI-assistent."
+        },
+        {
+          "type": "mistake",
+          "label": "Myte 3",
+          "title": "\"Man skal skrive på engelsk\"",
+          "body": "De fleste AI-assistenter forstår dansk fint. Skriv på det sprog, du tænker på."
+        },
+        {
+          "type": "mistake",
+          "label": "Myte 4",
+          "title": "\"AI bestemmer over mig\"",
+          "body": "Det er dig, der beslutter, hvad du bruger svaret til. AI kommer med forslag, du har det sidste ord."
+        },
+        {
+          "type": "cta",
+          "title": "Send den til en, der er skeptisk",
+          "body": "Og følg med for flere hverdagstips hver uge."
+        }
       ],
       "caption": "Der findes mange myter om AI 🤔\n\nDen gode nyhed er, at det er langt nemmere at komme i gang, end mange tror. Du skal hverken kunne kode eller skrive på engelsk.\n\nHvilken myte troede du selv på?",
-      "hashtags": ["#AItips", "#kunstigintelligens", "#myter", "#lærAI", "#smartehverdag", "#hverdagstips"]
+      "hashtags": [
+        "#AItips",
+        "#kunstigintelligens",
+        "#myter",
+        "#lærAI",
+        "#smartehverdag",
+        "#hverdagstips"
+      ]
     }
   ]
 }
