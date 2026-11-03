@@ -8,7 +8,7 @@ Det her skal gøres én gang. Nøglerne må aldrig deles i chatten eller skrives
 
 ## 2. Slå GitHub Pages til ✅
 
-Billederne ligger offentligt på `https://thomascarlsson.github.io/hverdag-med-ai/`.
+Billederne ligger offentligt på `https://hverdag-med-ai.github.io/hverdag-med-ai/`.
 
 ## 3. Opret Meta-appen ✅
 
