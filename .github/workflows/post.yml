@@ -31,10 +31,10 @@ jobs:
       - name: Gem status
         if: always()
         run: |
-          if [ -n "$(git status --porcelain queue prompts)" ]; then
+          if [ -n "$(git status --porcelain queue prompts config.json)" ]; then
             git config user.name "hverdag-bot"
             git config user.email "hverdag-bot@users.noreply.github.com"
-            git add queue prompts
+            git add queue prompts config.json
             git commit -m "Opdater status på opslag og prompt-side"
             git pull --rebase
             git push

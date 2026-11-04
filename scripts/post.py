@@ -17,7 +17,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -82,6 +82,41 @@ def publish(user_id, folder, post):
     return call("POST", f"{user_id}/media_publish", {"creation_id": c})["id"]
 
 
+def find_existing(user_id, caption, since):
+    """Finder et opslag på profilen med samme billedtekst, postet efter 'since'.
+
+    Instagram kan svare med en fejl, selvom opslaget faktisk er kommet ud.
+    Derfor tjekker vi profilen, før vi prøver igen, så der ikke opstår dubletter.
+    """
+    try:
+        items = call("GET", f"{user_id}/media", {"fields": "id,caption,timestamp", "limit": "15"}).get("data", [])
+    except Exception:  # noqa: BLE001
+        return None
+    key = (caption or "").strip()[:120]
+    for it in items:
+        ts = it.get("timestamp", "").replace("+0000", "+00:00")
+        try:
+            t = datetime.fromisoformat(ts)
+        except ValueError:
+            continue
+        if t >= since and (it.get("caption") or "").strip()[:120] == key:
+            return it["id"]
+    return None
+
+
+def is_block(err):
+    s = str(err)
+    return '"is_transient":false' in s or "2207051" in s or "Action is blocked" in s or '"code":4,' in s
+
+
+def pause_all(reason):
+    cfg_path = ROOT / "config.json"
+    cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
+    cfg["pause"] = True
+    cfg["pause_grund"] = reason
+    cfg_path.write_text(json.dumps(cfg, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def main():
     if CONFIG.get("pause"):
         print("Posting er sat på pause i config.json. Intet postes.")
@@ -128,20 +163,43 @@ def main():
             post["note"] = f"Ikke postet inden for {CONFIG.get('max_forsinkelse_timer', 12)} timer efter planlagt tidspunkt."
             print(f"{folder.name}: udløbet")
         else:
-            try:
-                media_id = publish(user_id, folder, post)
+            since = when - timedelta(hours=1)
+            existing = find_existing(user_id, post["billedtekst"], since)
+            if existing:
                 post["status"] = "postet"
-                post["instagram_id"] = media_id
-                post["postet"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-                post["note"] = ""
-                print(f"{folder.name}: postet ({media_id})")
-            except Exception as e:  # noqa: BLE001
-                post["forsøg"] = post.get("forsøg", 0) + 1
-                post["note"] = str(e)
-                if post["forsøg"] >= 3:
-                    post["status"] = "fejl"
-                print(f"{folder.name}: fejl ({e})")
-                failed = True
+                post["instagram_id"] = existing
+                post["postet"] = post.get("postet") or datetime.now(timezone.utc).isoformat(timespec="seconds")
+                post["note"] = "Fundet på profilen; blev ikke postet igen."
+                print(f"{folder.name}: lå allerede på profilen ({existing})")
+            else:
+                try:
+                    media_id = publish(user_id, folder, post)
+                    post["status"] = "postet"
+                    post["instagram_id"] = media_id
+                    post["postet"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+                    post["note"] = ""
+                    print(f"{folder.name}: postet ({media_id})")
+                except Exception as e:  # noqa: BLE001
+                    time.sleep(20)
+                    existing = find_existing(user_id, post["billedtekst"], since)
+                    if existing:
+                        post["status"] = "postet"
+                        post["instagram_id"] = existing
+                        post["postet"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+                        post["note"] = f"Instagram meldte fejl, men opslaget kom ud: {str(e)[:200]}"
+                        print(f"{folder.name}: postet trods fejlbesked ({existing})")
+                    else:
+                        post["forsøg"] = post.get("forsøg", 0) + 1
+                        post["note"] = str(e)
+                        if post["forsøg"] >= 3:
+                            post["status"] = "fejl"
+                        print(f"{folder.name}: fejl ({e})")
+                        failed = True
+                    if is_block(e):
+                        pause_all(f"Instagram begrænsede kontoen ({datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC). Sæt pause til false, når det er gået et par dage.")
+                        print("Instagram begrænser kontoen. Al posting er sat på pause i config.json.")
+                        f.write_text(json.dumps(post, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                        return 1
         f.write_text(json.dumps(post, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     return 1 if failed else 0
