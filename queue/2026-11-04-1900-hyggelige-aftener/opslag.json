@@ -1,6 +1,6 @@
 {
   "tidspunkt": "2026-11-04T19:00:00+01:00",
-  "status": "klar",
+  "status": "postet",
   "type": "karrusel",
   "titel": "5 prompts til hyggeligere aftener",
   "billeder": [
@@ -13,5 +13,7 @@
     "07.jpg"
   ],
   "billedtekst": "Kender du det, når hele aftenen går med at vælge, hvad man skal? 🛋️\n\nHer er fem prompts, der giver jer forslag på et øjeblik. Udskift teksten i [klammer] med jeres egne ønsker.\n\n🔗 Kopiér alle fem prompts med ét tryk via linket i bio.\n\nHvilken prøver I først?\n\n#hygge #prompts #AItips #kunstigintelligens #smartehverdag #aftenhygge",
-  "note": ""
+  "note": "Instagram meldte fejl, men opslaget kom ud: Instagram svarede 403: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"Action is blocked\",\"err",
+  "instagram_id": "18108842309364829",
+  "postet": "2026-11-04T18:56:36+00:00"
 }
